@@ -1,8 +1,9 @@
+--Zender X whitelist
 local nagas = {
 	0, 
 }
 local MODS = {
-	4285317953, --monk2.0
+	4285317953, --monk 2.0
 }
 local boughti = {
 	0
@@ -11,7 +12,6 @@ local idk = {
 	0, 
 
 }
-
 local formatNumber = (function(n)
 	n = tostring(n)
 	return n:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
@@ -24,13 +24,9 @@ local function checkswag()
 				local plrcheck = game:GetService('Players'):FindFirstChild(v.Name)
 				if plrcheck then
 					local plrID = game:GetService('Players'):FindFirstChild(v.Name).UserId
-					if plrID == 32 or plrID == 666 or plrID == 09999 then
+					if plrID == 32 then
 						if v:FindFirstChildWhichIsA('Humanoid') then           
 							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🪐]' .. game.Players[v.Name].DisplayName) 
-						end
-					elseif table.find(idk, plrID) then
-						if v:FindFirstChildWhichIsA('Humanoid') then
-							v:FindFirstChildWhichIsA('Humanoid').DisplayName = (game.Players[v.Name].DisplayName)
 						end
 					elseif plrID == 43 then
 						if v:FindFirstChildWhichIsA('Humanoid') then           
@@ -40,18 +36,11 @@ local function checkswag()
 						if v:FindFirstChildWhichIsA('Humanoid') then           
 							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. game.Players[v.Name].DisplayName) 
 						end
-					elseif plrID == 55 then
-						if v:FindFirstChildWhichIsA('Humanoid') then           
-							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🐔]' .. game.Players[v.Name].DisplayName) 
-						end
 					elseif plrID == 44 then
 						if v:FindFirstChildWhichIsA('Humanoid') then           
 							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[✅]' .. game.Players[v.Name].DisplayName) 
 						end
-					elseif plrID == 11 or plrID == 32 then
-						if v:FindFirstChildWhichIsA('Humanoid') then           
-							v:FindFirstChildWhichIsA('Humanoid').Displayname = ('[🌟]' .. game.Players[v.Name].DisplayName)
-						end
+	
 					else
 						if v:FindFirstChildWhichIsA('Humanoid') then
 							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🐒]' .. game.Players[v.Name].DisplayName)
@@ -62,9 +51,9 @@ local function checkswag()
 				local plrcheck = game.Players:FindFirstChild(v.Name)
 				if plrcheck then
 					local plrID = game.Players:FindFirstChild(v.Name).UserId
-					if plrID == 123 or plrID == 22 then
+					if plrID == 123 then
 						if v:FindFirstChildWhichIsA('Humanoid') then           
-							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💠]' .. game.Players[v.Name].DisplayName) 
+							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤖]' .. game.Players[v.Name].DisplayName) 
 						end
 					elseif table.find(nagas, plrID) then
 						if v:FindFirstChildWhichIsA('Humanoid') then
@@ -72,7 +61,7 @@ local function checkswag()
 						end
 					elseif table.find(MODS, plrID) then
 						if v:FindFirstChildWhichIsA('Humanoid') then
-							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🍆]' .. game.Players[v.Name].DisplayName)
+							v:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤑]' .. game.Players[v.Name].DisplayName)
 						end
 
 					elseif table.find(boughti, plrID) then
